@@ -1,0 +1,4 @@
+Version 1.1
+
+-Added pincheck for amounts above 5 euro's.
+-Added a check so manual inputs above 15 are ignored.

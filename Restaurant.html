@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- change the title to something better -->
+    <title>Bob's Burgers</title> 
+    <!-- Restaurant CSS -->
+    <link rel="stylesheet" type="text/css" href="restaurant.css">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  </head>
+  <body>
+      <!-- Navbar for the restaurant -->
+    <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">
+                        <img id="hamburgerLogo" src="https://img.icons8.com/plasticine/100/000000/hamburger.png"> Bob's Burgers
+                    </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+                    
+            </nav>
+    </div>
+    <!-- Food Table -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <table class="table table-bordered table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Food</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="article">Hamburger</th>
+                            <th class="price">€3.50</th>
+                            <th>
+                                <label>
+                                    <input class="amount" type="number" min="0" max="15">
+                                </label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="article">Cheeseburger</th>
+                            <th class="price">€4.50</th>
+                            <th>
+                                <label>
+                                    <input class="amount" type="number" min="0" max="15">
+                                </label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="article">Medium Fries</th>
+                            <th class="price">€1.50</th>
+                            <th>
+                                <label>
+                                    <input class="amount" type="number" min="0" max="15">
+                                </label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="article">Large Fries</th>
+                            <th class="price">€2.50</th>
+                            <th>
+                                <label>
+                                    <input class="amount" type="number" min="0" max="15">
+                                </label>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+    <!-- Drinks Table -->
+
+            <div class="col-sm">
+                <table class="table table-bordered table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Drinks</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="article">Coke</th>
+                            <th class="price">€2</th>
+                            <th>
+                                <label>
+                                    <input class="amount" type="number" min="0" max="15">
+                                </label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="article">Icetea</th>
+                            <th class="price">€3</th>
+                            <th>
+                                <label>
+                                    <input class="amount" type="number" min="0" max="15">
+                                </label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="article ">Fanta</th>
+                            <th class="price">€2</th>
+                            <th>
+                                <label>
+                                    <input class="amount" type="number" min="0" max="15">
+                                </label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="article">Beer</th>
+                            <th class="price">€3</th>
+                            <th>
+                                <label>
+                                    <input class="amount" type="number" min="0" max="15">
+                                </label>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Buy button -->
+    <div id="buyButton" class="container text-center">
+        <button type="button" class="btn btn-secondary">
+            Buy
+        </button>
+    </div>
+
+    <hr>
+
+
+    <!-- Receipt-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 bg-dark payoutRow">
+                <span class="payout" id="receiptI"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 bg-dark payoutRow">
+                <span class="payout" id="receiptM"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 bg-dark text-center" id="askForPin">
+                <span>Do you want to pay with debit card?</span>
+            </div>
+        </div>
+    </div>
+    <!-- Restaurant JavaScript -->
+    <script src="restaurant.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

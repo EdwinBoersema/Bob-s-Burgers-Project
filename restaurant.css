@@ -1,0 +1,51 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1466220549276-aef9ce186540?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+}
+
+body div.container {
+    margin-bottom: 40px;
+}
+
+div .col-sm {
+    border: 2 px solid #454866;
+    border-radius: 3px;
+}
+
+tr .article {
+    width: 40%;
+}
+
+tr .price {
+    width: 30%;
+}
+
+span#receipt {
+    text-align: right;
+}
+
+#hamburgerLogo {
+    width: 75px;
+    height: 75px;
+}
+
+nav.navbar {
+    background-image: url("https://images.unsplash.com/photo-1445888985293-8e1b904061c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+span.payout {
+    color: whitesmoke;
+}
+
+div.payoutRow {
+    margin: auto;
+}
+
+div#askForPin {
+    margin: auto;
+    color: whitesmoke;
+}
