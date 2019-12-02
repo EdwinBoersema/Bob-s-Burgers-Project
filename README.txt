@@ -1,2 +1,7 @@
 Small website project for the CodeGorilla Bootcamp.
-Includes 2 different menu's for food and drinks, the option to increase the amount of items you want to buy and a Buy button that gives you a receipt.
+
+Features:
+ - 2 menu's for food and drinks respectively.
+ - Option to increase the amount that you buy.
+ - Buy button that gives you a receipt with the total amount. 
+
